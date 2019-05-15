@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page{
+  height: 812px;
+  width: 375px;
+  background: #544FC0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.page .avatar{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(https://assets.capitalfm.com/2018/23/lilliya-scarlett-instagram-1528814125-custom-0.png);
+  background-size: 100% 100%;
+  margin-top: 100px;
+  z-index: 1;
+}
+.page .shadow{
+  height: 100px;
+  width: 100px;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 100px;
+  z-index: 2;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+form > input{
+  height: 100px;
+  width: 100px;
+  background: teal;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 100px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
